@@ -8,7 +8,10 @@ def exibir_menu():
 
 
 def LimparTela():
-  os.system('cls')
+  if os.name == 'nt':
+    os.system('cls')
+  else:
+    os.system('clear')
 
 
 def escolher_objeto():
